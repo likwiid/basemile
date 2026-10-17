@@ -1,0 +1,58 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please remove personal data (locations, health data) from anything you paste.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Run tab
+        2. Pick Long and start
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Settings, Data & developer, Version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and OS version
+      placeholder: Pixel 8, Android 15
+    validations:
+      required: true
+  - type: input
+    id: strap
+    attributes:
+      label: Heart rate strap
+      placeholder: Garmin HRM-Dual
+  - type: dropdown
+    id: online-lookups
+    attributes:
+      label: Weather and elevation lookups
+      description: Settings, Data & developer, Weather and elevation
+      options:
+        - On (default)
+        - Off
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Optional. Metro or logcat output, screenshots.

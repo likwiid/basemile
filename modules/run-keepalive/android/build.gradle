@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'com.likwiid.basemile'
+version = '1.0.0'
+
+android {
+  namespace "expo.modules.runkeepalive"
+  defaultConfig {
+    versionCode 1
+    versionName "1.0.0"
+  }
+}
+
+dependencies {
+  implementation 'com.facebook.react:react-android'
+}

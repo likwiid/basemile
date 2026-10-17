@@ -1,0 +1,91 @@
+{
+  "expo": {
+    "name": "BaseMile",
+    "slug": "basemile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "basemile",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.likwiid.basemile",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "BaseMile connects to your Bluetooth heart rate strap to read live heart rate during runs.",
+        "NSBluetoothPeripheralUsageDescription": "BaseMile connects to your Bluetooth heart rate strap to read live heart rate during runs.",
+        "NSLocationWhenInUseUsageDescription": "BaseMile tracks distance, pace, and route during your runs.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "BaseMile tracks distance, pace, and route during your runs, including when the screen is off.",
+        "NSMotionUsageDescription": "BaseMile reads steps to compute your running cadence.",
+        "UIBackgroundModes": [
+          "bluetooth-central",
+          "location",
+          "audio"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "predictiveBackGestureEnabled": false,
+      "allowBackup": false,
+      "package": "com.likwiid.basemile",
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION",
+        "android.permission.ACTIVITY_RECOGNITION"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "BaseMile tracks your run distance, pace, and route.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": true,
+          "modes": [
+            "central"
+          ],
+          "bluetoothAlwaysPermission": "BaseMile connects to your Bluetooth heart rate strap to read live heart rate during runs."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#10b981"
+        }
+      ],
+      "expo-sharing",
+      "@maplibre/maplibre-react-native"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
