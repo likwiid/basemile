@@ -21,6 +21,25 @@ ads, no tracking.
   <img src="docs/screenshots/run-picker.png" alt="Run picker with the Long, Medium and Brief runs" width="200">
 </p>
 
+## Install
+
+**Android:** download `BaseMile-<version>.apk` from the
+[latest release](https://github.com/likwiid/basemile/releases/latest) and open
+it on your phone. Allow installs from your browser when Android asks. It needs
+Android 7.0 or newer.
+
+An APK signed with the BaseMile release key is the official build. The
+certificate SHA-256 fingerprint of that key is:
+
+```
+95:82:76:81:F9:2F:94:85:BD:93:01:CF:C3:B2:99:37:9C:D3:AD:FA:A0:F2:A4:9F:A2:C0:15:9A:DB:B6:8A:64
+```
+
+Check it with `apksigner verify --print-certs BaseMile-<version>.apk`.
+
+**iPhone:** there is no App Store build. Build it from source with Xcode, see
+[Quick start](#quick-start).
+
 ## Features
 
 - **Three run types.** Long (continuous Zone 2 under your MAF ceiling), Medium
