@@ -26,6 +26,10 @@
           "location",
           "audio"
         ]
+      },
+      "buildNumber": "1",
+      "config": {
+        "usesNonExemptEncryption": false
       }
     },
     "android": {
