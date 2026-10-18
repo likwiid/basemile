@@ -10,7 +10,8 @@ features are all welcome.
 - Read [ARCHITECTURE.md](ARCHITECTURE.md) for the module map and conventions,
   and skim [`docs/adr/`](docs/adr/) for the decisions that shape the code.
 - By contributing you agree that your work is licensed under the project's
-  license, GPL-3.0-or-later.
+  license, GPL-3.0-or-later, including the app store permission in
+  [APP-STORE-EXCEPTION.md](APP-STORE-EXCEPTION.md).
 
 ## Setup
 
