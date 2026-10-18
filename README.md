@@ -216,6 +216,10 @@ Foundation, either version 3 of the License, or (at your option) any later
 version (**GPL-3.0-or-later**). See [LICENSE](LICENSE) for the full text.
 Each source file carries the SPDX identifier `GPL-3.0-or-later`.
 
+As an additional permission under GPL section 7, BaseMile may also be
+distributed through app stores such as the App Store and Google Play, as long
+as the source stays available. See [APP-STORE-EXCEPTION.md](APP-STORE-EXCEPTION.md).
+
 Copyright (C) 2026 Gabriel Ghoussoub.
 
 ## Credits
