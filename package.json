@@ -1,6 +1,6 @@
 {
   "name": "basemile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Local-first heart rate coach for aerobic base training, with a BLE chest strap and a voice coach.",
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/likwiid/basemile",
