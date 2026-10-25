@@ -2,7 +2,7 @@
   "expo": {
     "name": "BaseMile",
     "slug": "basemile",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "basemile",
@@ -40,6 +40,7 @@
       "predictiveBackGestureEnabled": false,
       "allowBackup": false,
       "package": "com.likwiid.basemile",
+      "versionCode": 2,
       "permissions": [
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_ADMIN",
@@ -86,7 +87,17 @@
         }
       ],
       "expo-sharing",
-      "@maplibre/maplibre-react-native"
+      "@maplibre/maplibre-react-native",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "useLegacyPackaging": true,
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

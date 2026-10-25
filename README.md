@@ -23,10 +23,11 @@ ads, no tracking.
 
 ## Install
 
-**Android:** download `BaseMile-<version>.apk` from the
+**Android:** download the APK from the
 [latest release](https://github.com/likwiid/basemile/releases/latest) and open
-it on your phone. Allow installs from your browser when Android asks. It needs
-Android 7.0 or newer.
+it on your phone. Most phones want `BaseMile-<version>-arm64-v8a.apk`. Pick
+`BaseMile-<version>-armeabi-v7a.apk` only for an older 32-bit phone. Allow
+installs from your browser when Android asks. It needs Android 7.0 or newer.
 
 An APK signed with the BaseMile release key is the official build. The
 certificate SHA-256 fingerprint of that key is:
@@ -35,7 +36,8 @@ certificate SHA-256 fingerprint of that key is:
 95:82:76:81:F9:2F:94:85:BD:93:01:CF:C3:B2:99:37:9C:D3:AD:FA:A0:F2:A4:9F:A2:C0:15:9A:DB:B6:8A:64
 ```
 
-Check it with `apksigner verify --print-certs BaseMile-<version>.apk`.
+Check it with `apksigner verify --print-certs BaseMile-<version>-arm64-v8a.apk`,
+and compare the download with `SHA256SUMS.txt` on the release.
 
 **iPhone:** there is no App Store build. Build it from source with Xcode, see
 [Quick start](#quick-start).
