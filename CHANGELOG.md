@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-10-25
+
+Smaller Android downloads. The app itself is unchanged.
+
+### Changed
+
+- The Android APK now comes as two files, one per CPU type. Most phones want
+  `BaseMile-1.0.1-arm64-v8a.apk`; `BaseMile-1.0.1-armeabi-v7a.apk` is for older 32-bit
+  phones.
+- Release builds compress their native libraries and run R8 to drop unused
+  code and resources, which takes each APK from about 70 to 80 MB to under
+  30 MB.
+
 ## [1.0.0] - 2026-10-17
 
 First public release.
